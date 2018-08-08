@@ -26,8 +26,6 @@ $ npm install node-logs-sqlite
 -- Interfaces --
 
 ```typescript
-type iOption = "background" | "bold" | "italic" | "strikethrough" | "underline";
-
 interface iLogDate {
   year: string,
   month: string,
