@@ -1,5 +1,5 @@
 {
-  "name": "node-logs",
+  "name": "node-logs-sqlite",
   "version": "0.1.0",
   "description": "A class to manage logs with sql base",
   "main": "lib/main.js",
