@@ -2,11 +2,12 @@
 
 // deps
 
+	// natives
 	const { join } = require("path");
 	const assert = require("assert");
 
+	// locals
 	const unlink = require(join(__dirname, "unlink.js"));
-
 	const NodeLogs = require(join(__dirname, "..", "lib", "main.js"));
 
 // consts
@@ -15,6 +16,8 @@
 	const logs = new NodeLogs();
 
 	const date = new Date();
+
+// tests
 
 describe("read", () => {
 
@@ -92,6 +95,10 @@ describe("read", () => {
 			assert.strictEqual(typeof data, "object", "logs value is not an object");
 			assert.strictEqual(data instanceof Array, true, "logs value is not an Array");
 			assert.strictEqual(data.length, 1, "logs length is not 1");
+
+			return Promise.resolve(data);
+
+		}).then((data) => {
 
 			assert.strictEqual(typeof data[0].date, "string", "first log's date is not a string");
 			assert.strictEqual(typeof data[0].time, "string", "first log's time is not a string");

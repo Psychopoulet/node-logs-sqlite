@@ -2,9 +2,13 @@
 
 // deps
 
+	// natives
 	const { strictEqual } = require("assert");
 
+	// locals
 	const createFile = require(require("path").join(__dirname, "..", "lib", "createFile.js"));
+
+// tests
 
 describe("createFile", () => {
 

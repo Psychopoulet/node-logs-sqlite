@@ -2,15 +2,19 @@
 
 // deps
 
+	// natives
 	const { join } = require("path");
 	const assert = require("assert");
 
+	// locals
 	const NodeLogs = require(join(__dirname, "..", "lib", "main.js"));
 
 // consts
 
 	const LOCAL_STORAGE = join(__dirname, "logs.db");
 	const logs = new NodeLogs();
+
+// tests
 
 describe("accessors", () => {
 
