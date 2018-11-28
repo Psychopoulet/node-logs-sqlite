@@ -10,7 +10,6 @@
 	const plumber = require("gulp-plumber");
 
 	// tests
-	const eslint = require("gulp-eslint");
 	const mocha = require("gulp-mocha");
 
 	// reports
@@ -28,32 +27,14 @@
 
 // tasks
 
-	gulp.task("eslint", () => {
-
-		return gulp.src(ALL_FILES)
-			.pipe(plumber())
-			.pipe(eslint({
-				"env": require(path.join(__dirname, "gulpfile", "eslint", "env.json")),
-				"globals": require(path.join(__dirname, "gulpfile", "eslint", "globals.json")),
-				"parserOptions": {
-					"ecmaVersion": 6
-				},
-				// http://eslint.org/docs/rules/
-				"rules": require(path.join(__dirname, "gulpfile", "eslint", "rules.json"))
-			}))
-			.pipe(eslint.format())
-			.pipe(eslint.failAfterError());
-
-	});
-
-	gulp.task("istanbul", gulp.series("eslint", () => {
+	gulp.task("istanbul", () => {
 
 		return gulp.src(APP_FILES)
 			.pipe(plumber())
 			.pipe(istanbul({ "includeUntested": true }))
 			.pipe(istanbul.hookRequire());
 
-	}));
+	});
 
 	gulp.task("mocha", gulp.series("istanbul", () => {
 
@@ -72,13 +53,6 @@
 			.pipe(coveralls());
 
 	}));
-
-// watcher
-
-	gulp.task("watch", () => {
-		gulp.watch(ALL_FILES, [ "eslint" ]);
-	});
-
 
 // default
 
