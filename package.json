@@ -1,6 +1,6 @@
 {
   "name": "node-logs-sqlite",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A class to manage logs with sql base",
   "main": "lib/main.js",
   "typings": "lib/index.d.ts",
