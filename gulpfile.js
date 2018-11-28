@@ -21,10 +21,6 @@
 	const APP_FILES = [ path.join(__dirname, "lib", "**", "*.js") ];
 	const UNITTESTS_FILES = [ path.join(__dirname, "tests", "**", "*.js") ];
 
-	const ALL_FILES = [ path.join(__dirname, "gulpfile.js") ]
-		.concat(APP_FILES)
-		.concat(UNITTESTS_FILES);
-
 // tasks
 
 	gulp.task("istanbul", () => {

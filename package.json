@@ -5,7 +5,7 @@
   "main": "lib/main.js",
   "typings": "lib/index.d.ts",
   "scripts": {
-    "lint": "./node_modules/.bin/eslint ./lib/**/*.js ./tests/**/*.js",
+    "lint": "./node_modules/.bin/eslint ./gulpfile.js ./lib/**/*.js ./tests/**/*.js",
     "tests": "npm run-script lint && gulp mocha",
     "ci": "gulp coveralls"
   },
