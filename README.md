@@ -1,10 +1,12 @@
 # node-logs-sqlite
 A class to manage logs
 
-[![Build Status](https://api.travis-ci.org/Psychopoulet/node-logs-sqlite.svg?branch=master)](https://travis-ci.org/Psychopoulet/node-logs-sqlite)
-[![Coverage Status](https://coveralls.io/repos/github/Psychopoulet/node-logs-sqlite/badge.svg?branch=master)](https://coveralls.io/github/Psychopoulet/node-logs-sqlite)
-[![Dependency Status](https://david-dm.org/Psychopoulet/node-logs-sqlite/status.svg)](https://david-dm.org/Psychopoulet/node-logs-sqlite)
-[![Dev dependency Status](https://david-dm.org/Psychopoulet/node-logs-sqlite/dev-status.svg)](https://david-dm.org/Psychopoulet/node-logs-sqlite?type=dev)
+[![Build status](https://api.travis-ci.org/Psychopoulet/node-logs-sqlite.svg?branch=master)](https://travis-ci.org/Psychopoulet/node-logs-sqlite)
+[![Coverage status](https://coveralls.io/repos/github/Psychopoulet/node-logs-sqlite/badge.svg?branch=master)](https://coveralls.io/github/Psychopoulet/node-logs-sqlite)
+[![Dependency status](https://david-dm.org/Psychopoulet/node-logs-sqlite/status.svg)](https://david-dm.org/Psychopoulet/node-logs-sqlite)
+[![Dev dependency status](https://david-dm.org/Psychopoulet/node-logs-sqlite/dev-status.svg)](https://david-dm.org/Psychopoulet/node-logs-sqlite?type=dev)
+[![Issues](https://img.shields.io/github/issues/Psychopoulet/node-logs-sqlite.svg)](https://github.com/Psychopoulet/node-logs-sqlite/issues)
+[![Pull requests](https://img.shields.io/github/issues-pr/Psychopoulet/node-logs-sqlite.svg)](https://github.com/Psychopoulet/node-logs-sqlite/pulls)
 
 ## Installation
 
@@ -111,7 +113,7 @@ logs.init().then(() => {
 ## Tests
 
 ```bash
-$ gulp
+$ npm run-script tests
 ```
 
 ## License
