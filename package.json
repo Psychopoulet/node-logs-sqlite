@@ -1,6 +1,6 @@
 {
   "name": "node-logs-sqlite",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A class to manage logs with sql base",
   "main": "lib/main.js",
   "typings": "lib/index.d.ts",
@@ -36,18 +36,18 @@
     "url": "https://github.com/Psychopoulet/node-logs-sqlite/issues"
   },
   "dependencies": {
-    "node-logs": "1.0.3",
-    "sqlite3": "4.0.7"
+    "node-logs": "1.0.4",
+    "sqlite3": "4.0.8"
   },
   "devDependencies": {
-    "@types/node": "12.0.0",
+    "@types/node": "12.0.2",
     "@types/sqlite3": "3.1.5",
     "check-version-modules": "1.1.1",
     "coveralls": "3.0.3",
     "eslint": "5.16.0",
-    "husky": "2.2.0",
+    "husky": "2.3.0",
     "mocha": "6.1.4",
-    "nyc": "14.1.0"
+    "nyc": "14.1.1"
   },
   "homepage": "https://github.com/Psychopoulet/node-logs-sqlite#readme",
   "engines": {
